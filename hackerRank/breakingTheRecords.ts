@@ -5,15 +5,15 @@ function breakingRecords(scores: number[]): number[] {
     let highestRecordBreaked = 0;
     let lowerRecordBreaked = 0;
 
-    for (const game of scores) { 
+    for (const GAME of scores) { 
 
-        if (game > highestRecord) {
+        if (GAME > highestRecord) {
             highestRecordBreaked++
-            highestRecord = game;
+            highestRecord = GAME;
         }
-        else if (game < lowerRecord) {
+        else if (GAME < lowerRecord) {
             lowerRecordBreaked++
-            lowerRecord = game;
+            lowerRecord = GAME;
         }
 
     }
